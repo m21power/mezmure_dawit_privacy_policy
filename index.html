@@ -1,0 +1,746 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    ```
+    <title>Privacy Policy — መዝሙረ ዳዊት</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=IM+Fell+English:ital@0;1&family=Noto+Serif+Ethiopic:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --ink: #160f0b;
+        --canvas: #efe2ca;
+        --card: #e5d2ae;
+        --high: #f6eeda;
+        --border: #d4be94;
+
+        --primary: #9e1b1b;
+        --primary-dark: #741313;
+
+        --gold: #b8860b;
+        --gold-light: #dfb045;
+        --gold-text: #fdc34d;
+
+        --umber: #3e2723;
+        --muted: #6b5547;
+
+        --white: #fbf8f1;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        min-height: 100vh;
+        background: var(--canvas);
+        color: var(--ink);
+        font-family: "Cormorant Garamond", Georgia, serif;
+        font-size: 18px;
+        line-height: 1.75;
+      }
+
+      /* ─────────────────────────────────────────────
+     HEADER
+  ───────────────────────────────────────────── */
+
+      header {
+        position: relative;
+        overflow: hidden;
+        padding: 4rem 1.5rem 3.5rem;
+        text-align: center;
+        color: var(--white);
+        background:
+          radial-gradient(
+            circle at center,
+            rgba(255, 255, 255, 0.035),
+            transparent 55%
+          ),
+          var(--primary);
+      }
+
+      header::before,
+      header::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 8px;
+
+        background: repeating-linear-gradient(
+          90deg,
+          var(--gold) 0px,
+          var(--gold) 12px,
+          var(--primary) 12px,
+          var(--primary) 24px,
+          var(--gold-light) 24px,
+          var(--gold-light) 36px,
+          var(--primary) 36px,
+          var(--primary) 48px
+        );
+      }
+
+      header::before {
+        top: 0;
+      }
+
+      header::after {
+        bottom: 0;
+      }
+
+      .ornament {
+        width: 56px;
+        height: 56px;
+        margin: 0 auto 1.5rem;
+        color: var(--gold-light);
+        opacity: 0.95;
+      }
+
+      .ornament svg {
+        width: 100%;
+        height: 100%;
+      }
+
+      .app-name {
+        display: block;
+
+        font-family: "Noto Serif Ethiopic", serif;
+        font-size: clamp(2.2rem, 7vw, 4rem);
+        font-weight: 600;
+        line-height: 1.25;
+        letter-spacing: 0.025em;
+
+        color: var(--gold-light);
+      }
+
+      .latin-name {
+        display: block;
+        margin-top: 0.35rem;
+
+        font-family: "IM Fell English", serif;
+        font-size: clamp(1rem, 2.8vw, 1.25rem);
+        font-style: italic;
+        letter-spacing: 0.12em;
+
+        color: rgba(251, 248, 241, 0.72);
+      }
+
+      .page-title {
+        margin-top: 1.75rem;
+
+        font-size: clamp(1rem, 3vw, 1.3rem);
+        font-weight: 400;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+
+        color: var(--white);
+      }
+
+      .effective-date {
+        margin-top: 0.45rem;
+
+        font-size: 0.85rem;
+        letter-spacing: 0.08em;
+
+        color: rgba(251, 248, 241, 0.58);
+      }
+
+      /* ─────────────────────────────────────────────
+     MAIN
+  ───────────────────────────────────────────── */
+
+      main {
+        width: min(760px, 100%);
+        margin: 0 auto;
+        padding: 3rem 1.5rem 5rem;
+      }
+
+      /* ─────────────────────────────────────────────
+     INTRO
+  ───────────────────────────────────────────── */
+
+      .intro {
+        position: relative;
+
+        padding: 1.6rem 1.8rem;
+
+        background: var(--high);
+        border-left: 4px solid var(--primary);
+        border-radius: 0 6px 6px 0;
+
+        color: var(--muted);
+        font-size: 1.08rem;
+        font-style: italic;
+        line-height: 1.85;
+      }
+
+      .intro strong {
+        color: var(--primary);
+        font-weight: 600;
+      }
+
+      /* ─────────────────────────────────────────────
+     DIVIDER
+  ───────────────────────────────────────────── */
+
+      .divider {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+
+        margin: 2.75rem 0;
+      }
+
+      .divider::before,
+      .divider::after {
+        content: "";
+        flex: 1;
+        height: 1px;
+
+        background: linear-gradient(
+          90deg,
+          transparent,
+          var(--border),
+          transparent
+        );
+      }
+
+      .divider-symbol {
+        color: var(--primary);
+        font-size: 0.9rem;
+        letter-spacing: 0.2em;
+      }
+
+      /* ─────────────────────────────────────────────
+     SECTIONS
+  ───────────────────────────────────────────── */
+
+      section {
+        margin-bottom: 2.7rem;
+      }
+
+      .section-heading {
+        display: flex;
+        align-items: baseline;
+        gap: 1rem;
+
+        margin-bottom: 0.85rem;
+      }
+
+      .section-number {
+        flex-shrink: 0;
+
+        font-family: "IM Fell English", serif;
+        font-size: 0.85rem;
+        font-style: italic;
+        letter-spacing: 0.08em;
+
+        color: var(--gold);
+      }
+
+      h2 {
+        color: var(--primary);
+
+        font-family: "Cormorant Garamond", serif;
+        font-size: clamp(1.2rem, 3vw, 1.45rem);
+        font-weight: 600;
+        line-height: 1.3;
+      }
+
+      p {
+        margin-bottom: 1rem;
+
+        color: #2e2119;
+        font-size: 1rem;
+      }
+
+      strong {
+        color: var(--primary);
+        font-weight: 600;
+      }
+
+      /* ─────────────────────────────────────────────
+     LIST
+  ───────────────────────────────────────────── */
+
+      ul {
+        list-style: none;
+        margin: 0.8rem 0 1rem;
+        padding: 0;
+      }
+
+      li {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.8rem;
+
+        padding: 0.4rem 0;
+
+        color: #2e2119;
+        font-size: 1rem;
+      }
+
+      li::before {
+        content: "❖";
+
+        flex-shrink: 0;
+
+        margin-top: 0.15rem;
+
+        color: var(--gold);
+        font-size: 0.65rem;
+      }
+
+      /* ─────────────────────────────────────────────
+     LOCAL DATA CARD
+  ───────────────────────────────────────────── */
+
+      .local-card {
+        margin-top: 1.2rem;
+        padding: 1.5rem;
+
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-top: 3px solid var(--gold);
+
+        border-radius: 6px;
+      }
+
+      .local-card h3 {
+        margin-bottom: 0.5rem;
+
+        color: var(--primary);
+
+        font-family: "Cormorant Garamond", serif;
+        font-size: 1.15rem;
+        font-weight: 600;
+      }
+
+      .local-card p {
+        margin-bottom: 0;
+
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      /* ─────────────────────────────────────────────
+     PRIVACY PROMISE
+  ───────────────────────────────────────────── */
+
+      .privacy-promise {
+        margin-top: 1rem;
+        padding: 1.5rem 1.6rem;
+
+        background: var(--high);
+
+        border: 1px solid var(--border);
+        border-radius: 6px;
+
+        text-align: center;
+      }
+
+      .privacy-promise .symbol {
+        display: block;
+
+        margin-bottom: 0.5rem;
+
+        color: var(--primary);
+        font-size: 1.6rem;
+      }
+
+      .privacy-promise h3 {
+        margin-bottom: 0.35rem;
+
+        color: var(--primary);
+
+        font-size: 1.2rem;
+        font-weight: 600;
+      }
+
+      .privacy-promise p {
+        margin-bottom: 0;
+
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      /* ─────────────────────────────────────────────
+     CONTACT
+  ───────────────────────────────────────────── */
+
+      .contact {
+        margin-top: 3rem;
+        padding: 2rem;
+
+        background:
+          radial-gradient(
+            circle at center,
+            rgba(255, 255, 255, 0.035),
+            transparent 60%
+          ),
+          var(--umber);
+
+        border-radius: 8px;
+
+        text-align: center;
+      }
+
+      .contact-ornament {
+        margin-bottom: 0.8rem;
+
+        color: var(--gold-light);
+        font-size: 1.3rem;
+        letter-spacing: 0.35em;
+      }
+
+      .contact h2 {
+        margin-bottom: 0.75rem;
+
+        color: var(--gold-light);
+      }
+
+      .contact p {
+        margin-bottom: 0.7rem;
+
+        color: rgba(246, 238, 218, 0.78);
+        font-size: 0.95rem;
+      }
+
+      .contact a {
+        color: var(--gold-light);
+
+        font-size: 1.08rem;
+        font-weight: 600;
+        text-decoration: none;
+
+        border-bottom: 1px solid var(--gold);
+      }
+
+      .contact a:hover {
+        color: white;
+        border-color: white;
+      }
+
+      /* ─────────────────────────────────────────────
+     FOOTER
+  ───────────────────────────────────────────── */
+
+      footer {
+        padding: 1.7rem 1rem;
+
+        background: var(--ink);
+
+        color: rgba(246, 238, 218, 0.48);
+
+        text-align: center;
+
+        font-size: 0.8rem;
+        letter-spacing: 0.05em;
+      }
+
+      .footer-name {
+        margin-right: 0.35rem;
+
+        font-family: "Noto Serif Ethiopic", serif;
+        color: var(--gold);
+      }
+
+      /* ─────────────────────────────────────────────
+     RESPONSIVE
+  ───────────────────────────────────────────── */
+
+      @media (max-width: 560px) {
+        body {
+          font-size: 17px;
+        }
+
+        header {
+          padding: 3.2rem 1rem 3rem;
+        }
+
+        main {
+          padding: 2rem 1rem 4rem;
+        }
+
+        .intro {
+          padding: 1.3rem 1.25rem;
+        }
+
+        .local-card {
+          padding: 1.25rem;
+        }
+
+        .contact {
+          padding: 1.7rem 1.25rem;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+      }
+    </style>
+    ```
+  </head>
+
+  <body>
+    ```
+    <!-- ═══════════════════════════════════════════════════════
+     HEADER
+═══════════════════════════════════════════════════════ -->
+
+    <header>
+      
+
+          <circle cx="28" cy="28" r="3" fill="var(--primary)" />
+        </svg>
+      </div>
+
+      <span class="app-name"> መዝሙረ ዳዊት </span>
+
+      <span class="latin-name"> Mäzmurä Dawit </span>
+
+      <p class="page-title">Privacy Policy</p>
+
+      <p class="effective-date">Effective Date: September 30, 2026</p>
+    </header>
+
+    <!-- ═══════════════════════════════════════════════════════
+     MAIN
+═══════════════════════════════════════════════════════ -->
+
+    <main>
+      <div class="intro">
+        Your privacy matters to us. <strong>መዝሙረ ዳዊት</strong>
+        is designed as a fully local application for reading and listening to
+        the Psalms of David in Amharic, Ge'ez, and English. The App does not
+        require an account, and your personal information is not collected by
+        us.
+      </div>
+
+      <div class="divider">
+        <span class="divider-symbol">❖</span>
+      </div>
+
+      <!-- §1 -->
+
+      <section>
+        <div class="section-heading">
+          <span class="section-number">§ 1</span>
+          <h2>Information We Collect</h2>
+        </div>
+
+        <p>
+          <strong>መዝሙረ ዳዊት does not collect personal information.</strong>
+          We do not ask you to create an account or provide your name, email
+          address, phone number, password, or other personal details.
+        </p>
+
+        <p>
+          The App does not use analytics, advertising services, tracking
+          technologies, or a remote user database.
+        </p>
+      </section>
+
+      <!-- §2 -->
+
+      <section>
+        <div class="section-heading">
+          <span class="section-number">§ 2</span>
+          <h2>Local-Only Operation</h2>
+        </div>
+
+        <p>
+          The App is designed to work locally on your device. Its reading
+          content, preferences, and supported audio functionality operate
+          without requiring you to create an account or send personal
+          information to us.
+        </p>
+
+        <div class="local-card">
+          <h3>Nothing is sent to our servers</h3>
+
+          <p>
+            We do not operate a server that receives or stores your reading
+            activity, selected language, prayer-day preferences, or other
+            personal usage information.
+          </p>
+        </div>
+      </section>
+
+      <!-- §3 -->
+
+      <section>
+        <div class="section-heading">
+          <span class="section-number">§ 3</span>
+          <h2>Audio &amp; Offline Content</h2>
+        </div>
+
+        <p>
+          መዝሙረ ዳዊት provides Psalm content in
+          <strong>Amharic, Ge'ez, and English</strong>, including audio for
+          supported Ge'ez content.
+        </p>
+
+        <ul>
+          <li>
+            Audio and reading content may be stored locally on your device for
+            offline use.
+          </li>
+
+          <li>
+            Listening to audio does not require us to receive information about
+            what you are listening to.
+          </li>
+
+          <li>
+            Your reading and listening activity is not sent to the developer.
+          </li>
+        </ul>
+      </section>
+
+      <!-- §4 -->
+
+      <section>
+        <div class="section-heading">
+          <span class="section-number">§ 4</span>
+          <h2>App Preferences</h2>
+        </div>
+
+        <p>
+          The App may store certain preferences locally on your device, such as
+          language, appearance, or reading settings.
+        </p>
+
+        <p>
+          These preferences remain on your device and are not transmitted to us.
+        </p>
+      </section>
+
+      <!-- §5 -->
+
+      <section>
+        <div class="section-heading">
+          <span class="section-number">§ 5</span>
+          <h2>Third-Party Services</h2>
+        </div>
+
+        <p>
+          The App does not intentionally integrate third-party advertising,
+          analytics, tracking, authentication, or cloud-storage services that
+          collect personal information from users.
+        </p>
+
+        <div class="privacy-promise">
+          <span class="symbol">❖</span>
+
+          <h3>Private by Design</h3>
+
+          <p>
+            No account. No tracking. No advertising. No personal-data collection
+            by the App.
+          </p>
+        </div>
+      </section>
+
+      <!-- §6 -->
+
+      <section>
+        <div class="section-heading">
+          <span class="section-number">§ 6</span>
+          <h2>Data Security</h2>
+        </div>
+
+        <p>
+          Because the App does not collect or transmit personal information,
+          there is no personal user database maintained by us.
+        </p>
+
+        <p>
+          You are responsible for maintaining the security of your own Android
+          device and any data stored locally on it.
+        </p>
+      </section>
+
+      <!-- §7 -->
+
+      <section>
+        <div class="section-heading">
+          <span class="section-number">§ 7</span>
+          <h2>Children's Privacy</h2>
+        </div>
+
+        <p>
+          መዝሙረ ዳዊት does not knowingly collect personal information from children
+          or adults. Since the App does not require an account or collect
+          personal information, no personal profile is created for users.
+        </p>
+      </section>
+
+      <!-- §8 -->
+
+      <section>
+        <div class="section-heading">
+          <span class="section-number">§ 8</span>
+          <h2>Changes to This Policy</h2>
+        </div>
+
+        <p>
+          We may update this Privacy Policy if the App's functionality changes
+          or if additional services are introduced.
+        </p>
+
+        <p>
+          Any changes will be published on this page together with a revised
+          effective date.
+        </p>
+      </section>
+
+      <div class="divider">
+        <span class="divider-symbol">❖</span>
+      </div>
+
+      <!-- CONTACT -->
+
+      <div class="contact">
+        <div class="contact-ornament">❖ &nbsp; ✦ &nbsp; ❖</div>
+
+        <h2>Contact the Developer</h2>
+
+        <p>
+          If you have questions about this Privacy Policy or the App, you can
+          contact the developer directly.
+        </p>
+
+        <a href="mailto:mesaylema21@gmail.com"> mesaylema21@gmail.com </a>
+      </div>
+    </main>
+
+    <!-- ═══════════════════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════════════════ -->
+
+    <footer>
+      <span class="footer-name"> መዝሙረ ዳዊት </span>
+
+      &nbsp;·&nbsp; Privacy Policy &nbsp;·&nbsp; © 2026
+    </footer>
+    ```
+  </body>
+</html>
