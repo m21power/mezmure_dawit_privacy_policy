@@ -498,11 +498,16 @@
   </head>
 
   <body>
-
-
     <header>
-      
-
+      <div class="ornament">
+        <svg
+          viewBox="0 0 56 56"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+        >
+          <circle cx="28" cy="28" r="26" />
+          <path d="M28 8v40M8 28h40" />
           <circle cx="28" cy="28" r="3" fill="var(--primary)" />
         </svg>
       </div>
@@ -522,11 +527,11 @@
 
     <main>
       <div class="intro">
-        Your privacy matters to us. <strong>መዝሙረ ዳዊት</strong>
-        is designed as a fully local application for reading and listening to
-        the Psalms of David in Amharic, Ge'ez, and English. The App does not
-        require an account, and your personal information is not collected by
-        us.
+        Your privacy matters to us. <strong>መዝሙረ ዳዊት</strong> is an app for
+        reading and listening to the Psalms of David in Amharic, Ge'ez, and
+        English, together with the Gitsawe. The App does not require an
+        account, and your personal information is not collected by us. Reading
+        content works offline, and audio is downloaded only when you choose to.
       </div>
 
       <div class="divider">
@@ -551,6 +556,14 @@
           The App does not use analytics, advertising services, tracking
           technologies, or a remote user database.
         </p>
+
+        <p>
+          The App connects to the internet only when you download audio. Like
+          any internet download, the server hosting the audio files may receive
+          standard technical information such as your IP address and the time
+          of the request. We do not use this information to identify you or to
+          build a profile about you.
+        </p>
       </section>
 
       <!-- §2 -->
@@ -558,23 +571,24 @@
       <section>
         <div class="section-heading">
           <span class="section-number">§ 2</span>
-          <h2>Local-Only Operation</h2>
+          <h2>Local-First Operation</h2>
         </div>
 
         <p>
-          The App is designed to work locally on your device. Its reading
-          content, preferences, and supported audio functionality operate
-          without requiring you to create an account or send personal
-          information to us.
+          The App's reading content, including the Psalms and Gitsawe, is
+          included with the App and works without an internet connection. Your
+          preferences are stored on your device. Audio is downloaded only when
+          you tap the download button.
         </p>
 
         <div class="local-card">
-          <h3>Nothing is sent to our servers</h3>
+          <h3>We do not receive your activity</h3>
 
           <p>
             We do not operate a server that receives or stores your reading
-            activity, selected language, prayer-day preferences, or other
-            personal usage information.
+            activity, selected language, prayer-day preferences, listening
+            history, or other personal usage information. The only network
+            activity is the download of audio files you request.
           </p>
         </div>
       </section>
@@ -589,23 +603,33 @@
 
         <p>
           መዝሙረ ዳዊት provides Psalm content in
-          <strong>Amharic, Ge'ez, and English</strong>, including audio for
-          supported Ge'ez content.
+          <strong>Amharic, Ge'ez, and English</strong>, along with Gitsawe
+          readings and audio for supported content.
         </p>
 
         <ul>
           <li>
-            Audio and reading content may be stored locally on your device for
-            offline use.
+            Audio is not bundled with the App. When you tap download, the file
+            is fetched over the internet from [YOUR AUDIO HOST, e.g. our own
+            server / a third-party hosting service].
           </li>
 
           <li>
-            Listening to audio does not require us to receive information about
-            what you are listening to.
+            Downloaded audio is saved in the App's private storage on your
+            device so you can listen offline. The App does not need access to
+            your photos, files, or other storage, and other apps cannot read
+            these files.
           </li>
 
           <li>
-            Your reading and listening activity is not sent to the developer.
+            You can remove downloaded audio by clearing the App's storage in
+            your Android settings or by uninstalling the App.
+          </li>
+
+          <li>
+            Playback happens entirely on your device. We are not told what you
+            listen to, and your reading and listening activity is not sent to
+            the developer.
           </li>
         </ul>
       </section>
@@ -637,9 +661,19 @@
         </div>
 
         <p>
-          The App does not intentionally integrate third-party advertising,
-          analytics, tracking, authentication, or cloud-storage services that
-          collect personal information from users.
+          The App does not integrate advertising, analytics, tracking,
+          authentication, or cloud-storage services that collect personal
+          information from users.
+        </p>
+
+        <p>
+          Audio files are downloaded from [YOUR AUDIO HOST]. Before
+          downloading, the App may briefly check whether your device is online
+          by contacting public internet endpoints. As with any internet
+          connection, these services can see your IP address. The App does not
+          include any personal information in these requests.
+          [If the host is third-party, add: Their handling of technical data is
+          governed by their own privacy policy.]
         </p>
 
         <div class="privacy-promise">
@@ -666,6 +700,8 @@
           Because the App does not collect or transmit personal information,
           there is no personal user database maintained by us.
         </p>
+
+        <p>Audio files are downloaded over an encrypted (HTTPS) connection.</p>
 
         <p>
           You are responsible for maintaining the security of your own Android
